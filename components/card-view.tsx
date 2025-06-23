@@ -71,8 +71,16 @@ const CardView: React.FC<CardViewProps> = ({
               sizes="(max-width: 640px) 100vw, 640px"
               priority
             />
+            {isFaceUp && card.tcgplayerMarketPriceUsd !== undefined && (
+              <div
+                className="absolute top-1 right-1 px-2 py-0.5 bg-green-900/80 rounded text-xs text-green-200 font-bold shadow z-20"
+                title="TCGPlayer Market Price"
+              >
+                ${card.tcgplayerMarketPriceUsd.toFixed(2)}
+              </div>
+            )}
             {card.rarity && (
-              <div className="absolute top-1 right-1 px-1.5 py-0.5 bg-black/60 rounded-full text-[9px] sm:text-[10px] text-yellow-300 font-semibold shadow">
+              <div className="absolute top-7 right-1 px-1.5 py-0.5 bg-black/60 rounded-full text-[9px] sm:text-[10px] text-yellow-300 font-semibold shadow">
                 {card.rarity}
               </div>
             )}

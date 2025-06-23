@@ -6,6 +6,7 @@ export interface CardData {
   rarity?: string;
   supertype?: string;
   types?: string[];
+  tcgplayerMarketPriceUsd?: number;
 }
 
 export enum PackState {

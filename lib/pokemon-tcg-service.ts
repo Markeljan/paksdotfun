@@ -48,6 +48,22 @@ const mapPokemonCardToCardData = (pokemonCard: Card): CardData => {
     );
   }
 
+  // Extract TCGPlayer market price (normal, holofoil, reverseHolofoil, unlimited, 1stEdition)
+  let tcgplayerMarketPriceUsd: number | undefined;
+  if (pokemonCard?.tcgplayer?.prices) {
+    const prices = pokemonCard.tcgplayer.prices as Record<
+      string,
+      { market?: number }
+    >;
+    tcgplayerMarketPriceUsd =
+      prices["1stEdition"]?.market ??
+      prices.holofoil?.market ??
+      prices.reverseHolofoil?.market ??
+      prices.unlimited?.market ??
+      prices.normal?.market ??
+      undefined;
+  }
+
   return {
     id: pokemonCard.id,
     name: pokemonCard.name,
@@ -56,6 +72,7 @@ const mapPokemonCardToCardData = (pokemonCard: Card): CardData => {
     rarity: pokemonCard.rarity,
     supertype: pokemonCard.supertype,
     types: pokemonCard.types,
+    tcgplayerMarketPriceUsd,
   };
 };
 

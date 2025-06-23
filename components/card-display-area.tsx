@@ -19,8 +19,20 @@ const CardDisplayArea: React.FC<CardDisplayAreaProps> = ({
   const allRevealed =
     flippedCardIds.length === allCards.length && allCards.length > 0;
 
+  // Calculate total value of revealed cards
+  const totalRevealedValue = allCards.reduce((sum, card) => {
+    if (flippedCardIds.includes(card.id) && typeof card.tcgplayerMarketPriceUsd === 'number') {
+      return sum + card.tcgplayerMarketPriceUsd;
+    }
+    return sum;
+  }, 0);
+
   return (
     <div className="w-full flex flex-col items-center p-4 my-8">
+      {/* Total value display */}
+      <div className="mb-4 text-lg font-bold text-green-300" aria-live="polite">
+        Total Value Revealed: ${totalRevealedValue.toFixed(2)}
+      </div>
       <div
         className="flex flex-wrap justify-center items-center gap-3 sm:gap-4 w-full max-w-5xl"
         style={{ minHeight: "22rem" }}

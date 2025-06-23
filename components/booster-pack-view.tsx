@@ -106,7 +106,7 @@ const BoosterPackView: React.FC<BoosterPackViewProps> = ({
           className="text-3xl sm:text-4xl font-black tracking-wider text-white"
           style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.5)" }}
         >
-          GEMINI
+          PAKS.FUN
         </div>
         <div className="mt-2 px-4 py-2 bg-black/30 rounded-md text-sm sm:text-base font-semibold text-yellow-300">
           BOOSTER PACK
