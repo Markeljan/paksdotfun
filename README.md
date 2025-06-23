@@ -38,7 +38,7 @@ This project is a web-based simulator for opening random Pokémon Trading Card G
 3. Copy the example environment file and add your API key:
    ```bash
    cp .env.example .env
-   # Edit .env and set NEXT_PUBLIC_POKEMONTCG_API_KEY=your_api_key_here
+   # Edit .env and set POKEMONTCG_API_KEY==your_api_key_here
    ```
 
 ### Running the App
@@ -61,7 +61,7 @@ Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Configuration
 
-- The app requires a valid `NEXT_PUBLIC_POKEMONTCG_API_KEY` in your environment variables.
+- The app requires a valid `POKEMONTCG_API_KEY` in your environment variables.
 - You can obtain a free API key from [dev.pokemontcg.io](https://dev.pokemontcg.io/).
 
 ## Scripts
