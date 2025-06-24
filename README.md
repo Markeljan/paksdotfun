@@ -9,6 +9,9 @@
 - Hosted: [https://paks.fun](https://paks.fun)
 - [Video Demo](https://www.youtube.com/watch?v=Wba2EZ8vhZo)
 
+<img width="763" alt="image" src="https://github.com/user-attachments/assets/4c4462be-f685-41f8-aa0d-605294fd3240" />
+
+
 ---
 
 ## Team Introduction
