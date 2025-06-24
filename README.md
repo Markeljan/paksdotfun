@@ -8,6 +8,7 @@
 
 - Hosted: [https://paks.fun](https://paks.fun)
 - [Video Demo](https://www.youtube.com/watch?v=Wba2EZ8vhZo)
+- [Supra Testnet Deployment](https://testnet.suprascan.io/address/0x8cf400e6ba0ea4da54eac93df56ef8ae8c0e10c9dad49a0eb70006270fc4b5ec/f?tab=transactions&type=user%2Cblock_metadata%2Cautomated&pageNo=1&rows=10)
 
 <img width="763" alt="image" src="https://github.com/user-attachments/assets/4c4462be-f685-41f8-aa0d-605294fd3240" />
 
