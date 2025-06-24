@@ -1,0 +1,16 @@
+[package]
+name = "paksdotfunsupra"
+version = "1.0.0"
+authors = ["Markeljan"]
+
+[addresses]
+paks_deployer = "0x8cf400e6ba0ea4da54eac93df56ef8ae8c0e10c9dad49a0eb70006270fc4b5ec"
+
+[dev-addresses]
+
+[dependencies.SupraFramework]
+git = "https://github.com/Entropy-Foundation/aptos-core.git"
+rev = "dev"
+subdir = "aptos-move/framework/supra-framework"
+
+[dev-dependencies]
