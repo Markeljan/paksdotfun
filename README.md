@@ -7,7 +7,7 @@
 ## Live Demo
 
 - Hosted: [https://paks.fun](https://paks.fun)
-- [Video Walkthrough](#) <!-- TODO: Add YouTube/Loom link here before final submission -->
+- [Video Demo](https://www.youtube.com/watch?v=Wba2EZ8vhZo)
 
 ---
 
